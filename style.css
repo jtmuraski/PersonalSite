@@ -5,3 +5,10 @@
 .hero {
     background-color: black;
 }
+
+.heroHeader {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
