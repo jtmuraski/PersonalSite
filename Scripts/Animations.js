@@ -2,10 +2,10 @@ var words = ['Software Engineer', 'Amazon Web Services', 'Automation'];
 var wordIndex = 0;
 var charIndex = 0;
 var direction = 1; // 1 for typing, -1 for erasing
-var typingElement = document.querySelector('.typing');
+var typingElement;
 
 function type() {
-    if (direction === 1 && charIndex === words[wordIndex].length) {
+    if (direction === 1 && charIndex === words[wordIndex].length + 1) {
         direction = -1;
         setTimeout(type, 2000); // Wait for 2 seconds before start erasing
     } else if (direction === -1 && charIndex === 0) {
@@ -19,4 +19,7 @@ function type() {
     }
 }
 
-type(); // Start typing
+window.onload = function() {
+    typingElement = document.querySelector('.typing');
+    type(); // Start typing
+}

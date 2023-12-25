@@ -7,8 +7,21 @@
 }
 
 .heroHeader {
-    color: white;
+    color: whitesmoke;
     position: absolute;
     top: 20%;
     left: 30%;
+}
+
+.navButtons .btn {
+    background-color: black;
+    color: rgb(97, 93, 93);
+    margin: 0px 25px 0px 25px;
+    border: 1px solid grey;
+    height: 10%;
+    width: 10rem;
+}
+
+.navButtons .btn:hover {
+    background-color: grey;
 }
