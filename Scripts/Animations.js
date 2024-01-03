@@ -15,7 +15,7 @@ function type() {
     } else {
         typingElement.textContent = words[wordIndex].substring(0, charIndex);
         charIndex += direction;
-        setTimeout(type, direction === 1 ? 200 : 100); // Typing speed is 200ms, erasing speed is 100ms
+        setTimeout(type, direction === 1 ? 100 : 100); // Typing speed is 200ms, erasing speed is 100ms
     }
 }
 

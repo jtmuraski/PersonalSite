@@ -1,25 +1,106 @@
 /* Top Level Selectors */
 
 
-/* Custom Classes */
+/* ---Custom Classes---- */
+
+/* -- Media Queries-- */
+@media (max-width: 576px) 
+{
+    .home
+    {
+        background-color:  black;
+    }
+    
+}
+
+@media (mix-width: 577px) and (max-width: 768px) 
+{
+    .home 
+    {
+        background-image: url('Images/WelcomeImage.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) 
+{
+    .home 
+    {
+        background-image: url('Images/WelcomeImage.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .heroHeader {
+        color: whitesmoke;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 993px)
+{
+    .home 
+    {
+        background-image: url('Images/WelcomeImage.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .heroHeader {
+        color: whitesmoke;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        font-size: 1.5rem;
+    }
+}
+
+
+/* -------------------------- */
 .hero {
     background-color: black;
 }
 
-.heroHeader {
-    color: whitesmoke;
-    position: absolute;
-    top: 20%;
-    left: 30%;
+
+
+.heroHeader h1 {
+    font-size: 5rem;
 }
 
+.heroHeader h3{
+    min-height: 4.2rem;
+}
+
+.typing {
+    font-size: 3.5rem;
+    color: #8c8c8c;
+}
+
+.navButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    position: relative;
+}
 .navButtons .btn {
     background-color: black;
     color: rgb(97, 93, 93);
     margin: 0px 25px 0px 25px;
     border: 1px solid grey;
-    height: 10%;
+    height: 4rem;
     width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
 
 .navButtons .btn:hover {
