@@ -68,8 +68,6 @@
     background-color: black;
 }
 
-
-
 .heroHeader h1 {
     font-size: 5rem;
 }
@@ -104,5 +102,40 @@
 }
 
 .navButtons .btn:hover {
+    background-color: grey;
+}
+
+.center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardCollection
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+/* -------------------------- */
+
+/* --Bootstrap Overrides-- */
+.card
+{
+    background-color: black;
+    color: whitesmoke;
+    border: 1px solid grey;
+    padding: 5px;
+    margin: 5px;
+}
+
+.card:hover
+{
     background-color: grey;
 }
