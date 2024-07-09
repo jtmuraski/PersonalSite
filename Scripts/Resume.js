@@ -21,9 +21,9 @@ function showDetails(id) {
     }
 }
 
-// Add the mouseover event to each card
+// Add the on mouse click event to each card
 cards.forEach(function(card, index){
-    card.addEventListener('mouseover', function()
+    card.addEventListener('click', function()
     {   
         hideAllDetails();
         showDetails(card.id);
